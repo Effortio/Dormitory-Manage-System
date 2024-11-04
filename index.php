@@ -51,16 +51,27 @@ require_once "embed/sidenav.php";
             */
             if (!is_null($usertype) && $usertype != "failed") {
             ?>
+<<<<<<< Updated upstream
                 <button class="buttons" data-href="room-list.php">
                     预定房间/退还房间
                 </button>
                 <button class="buttons" data-href="manage.php">
+=======
+                <button id="book" class="buttons" onclick='document.location="roomlist.php"'>
+                    预定房间/退还房间
+                </button>
+                <button id="manage" class="buttons" onclick='document.location="manage.php"'>
+>>>>>>> Stashed changes
                     管理我的账号
                 </button>
                 <?php
                 if ($usertype == "admin" || $userinfo == "system-admin") {
                 ?>
+<<<<<<< Updated upstream
                     <button class="buttons" data-href="accept.php">
+=======
+                    <button id="accept" class="buttons" onclick='document.location="accept.php"'>
+>>>>>>> Stashed changes
                         批准
                     </button>
                 <?php
@@ -71,8 +82,16 @@ require_once "embed/sidenav.php";
             <?php
             } else {
             ?>
+<<<<<<< Updated upstream
                 <button class="buttons" data-href="access.php">
                     登录 / 注册
+=======
+                <button id="login" onclick='document.location="login.php"' class="buttons">
+                    登录
+                </button>
+                <button id="register" onclick='document.location="register.php"' class="buttons">
+                    注册
+>>>>>>> Stashed changes
                 </button>
             <?php
             }
